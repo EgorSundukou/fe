@@ -2,7 +2,7 @@
   "name": "cra1",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://EgorSundukou.github.io/fe",
+  "homepage": "http://EgorSundukou.github.io/fe/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
