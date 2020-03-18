@@ -8,7 +8,8 @@ function State(props) {
         props.countChangeU()
     };
 
-    const countChangeDo = () => {
+    const countChangeDo = (itemw) => {
+        console.log("Changed2!!!"+itemw)
         setCount(count - 1);
       props.countChangeD()
     };
@@ -16,7 +17,7 @@ function State(props) {
 
     return (
         <div>
-            <button onClick={countChangeDo}>-</button>
+            <button onClick={()=>countChangeDo(5)}>-</button>
             {count}
             <button onClick={countChangeUp}>+</button>
 

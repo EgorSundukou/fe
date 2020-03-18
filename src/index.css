@@ -38,6 +38,21 @@ header nav ul {
   list-style-type: none;
 }
 
+footer nav {
+  display: inline-block;
+  margin-left: 50px ;
+}
+footer nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+footer nav ul li {
+  float: left;
+  margin-right: 30px;
+}
+
 header nav ul li {
   float: left;
   margin-right: 30px;

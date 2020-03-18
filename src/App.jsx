@@ -47,13 +47,13 @@ function App() {
     console.log("Cliked!!!"+name)
   }
 
-  function countChangedD(value) {
-    console.log("Changed2!!!"+value)
+  function countChangedD() {
+    console.log("ChangedTc!!!")
 
     setTotalCount(totalCount - 1)
   }
-    function countChangedU(value) {
-        console.log("Changed2!!!"+value)
+    function countChangedU() {
+        console.log("ChangedT!!!")
 
         setTotalCount(totalCount + 1)
     }
@@ -61,17 +61,17 @@ function App() {
 
   return (
     <div className="App" className="container">
-      <Header />
+      <Header items={items} />
       <Content />
-      <Footer />
-      <Header menuItems={items}/>
+      <Footer items={items} items2={items2} text={text} />
+      <Header items={items}/>
       {/*<Content bc={buttonClicked}/>*/}
       Total:{totalCount}
       <hr/>
       <State countChangeD={countChangedD} countChangeU={countChangedU} />
       <hr/>
       <State countChangeD={countChangedD} countChangeU={countChangedU} />
-      <Footer menuItems={items} menu2Items={items2} text={text}/>
+      <Footer items={items} items2={items2} text={text}/>
 
     </div>
   );
