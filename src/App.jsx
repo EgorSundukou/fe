@@ -42,14 +42,22 @@ const text = "Some text"
 
 function App() {
   const [totalCount, setTotalCount] = useState(0)
+
   function buttonClicked(name) {
     console.log("Cliked!!!"+name)
   }
 
-  function countChanged(value) {
-    console.log("Changed!!!"+value)
-    setTotalCount(totalCount + 1)
+  function countChangedD(value) {
+    console.log("Changed2!!!"+value)
+
+    setTotalCount(totalCount - 1)
   }
+    function countChangedU(value) {
+        console.log("Changed2!!!"+value)
+
+        setTotalCount(totalCount + 1)
+    }
+
 
   return (
     <div className="App" className="container">
@@ -60,9 +68,9 @@ function App() {
       {/*<Content bc={buttonClicked}/>*/}
       Total:{totalCount}
       <hr/>
-      <State countChange={countChanged}/>
+      <State countChangeD={countChangedD} countChangeU={countChangedU} />
       <hr/>
-      <State countChange={countChanged}/>
+      <State countChangeD={countChangedD} countChangeU={countChangedU} />
       <Footer menuItems={items} menu2Items={items2} text={text}/>
 
     </div>

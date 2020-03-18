@@ -5,12 +5,12 @@ function State(props) {
 
     const countChangeUp = () => {
         setCount(count + 1);
-        props.countChange(count + 1)
+        props.countChangeU()
     };
 
     const countChangeDo = () => {
         setCount(count - 1);
-      props.countChange(count - 1)
+      props.countChangeD()
     };
 
 
